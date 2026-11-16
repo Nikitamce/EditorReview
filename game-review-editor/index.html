@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Редактор обзоров игр</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<aside>
+  <button id="newBtn" style="border-color:var(--ink);font-weight:600">+ Новый обзор</button>
+  <button id="sampleBtn">Открыть пример обзора</button>
+  <input id="q" placeholder="Поиск по обзорам">
+  <h2>Мои обзоры</h2>
+  <ul id="list"></ul>
+  <div class="tools">
+    <h2>Экспорт и импорт</h2>
+    <button data-ex="md1">Текущий обзор · Markdown</button>
+    <button data-ex="mdA">Все обзоры · Markdown</button>
+    <button data-ex="rv1">Текущий обзор · формат редактора</button>
+    <button data-ex="rvA">Все обзоры · формат редактора</button>
+    <button id="imp">Импорт из формата редактора</button>
+    <input type="file" id="impFile" accept=".json,.rvw.json" hidden>
+    <h2>Настройки</h2>
+    <button id="sites">Сайты и интеграции</button>
+  </div>
+</aside>
+
+<main>
+  <div id="ribbon">
+    <div class="grp">
+      <select id="style" title="Стиль абзаца">
+        <option value="p">Текст</option><option value="h1">Заголовок 1</option><option value="h2">Заголовок 2</option><option value="h3">Заголовок 3</option><option value="blockquote">Цитата</option>
+      </select>
+    </div>
+    <div class="grp">
+      <button data-c="bold" title="Жирный"><b>B</b></button><button data-c="italic" title="Курсив"><i>I</i></button><button data-c="underline" title="Подчёркнутый"><u>U</u></button><button data-c="strike" title="Зачёркнутый"><s>S</s></button><button data-c="code" title="Код">{ }</button>
+    </div>
+    <div class="grp">
+      <button data-c="ul">• Список</button><button data-c="ol">1. Список</button>
+    </div>
+    <div class="grp">
+      <button data-c="left" title="По левому краю">⇤</button><button data-c="center" title="По центру">≡</button><button data-c="right" title="По правому краю">⇥</button>
+    </div>
+    <div class="grp">
+      <button data-c="link">Ссылка</button><button data-c="game">Игра</button><button data-c="img">Фото</button><button data-c="spoiler">Спойлер</button><button data-c="hr">Линия</button>
+    </div>
+    <div class="grp">
+      <button data-c="undo">Отменить</button><button data-c="redo">Вернуть</button>
+    </div>
+  </div>
+
+  <div id="scroll">
+    <article>
+      <input id="title" placeholder="Заголовок обзора (необязательно)">
+      <div id="body" contenteditable="true" spellcheck="true"></div>
+
+      <section class="rev">
+        <div class="row" id="gameLine"></div>
+        <div class="row"><div id="stars"></div></div>
+        <div class="row"><span id="sico"></span><span id="sl"><span id="stxt"></span></span></div>
+        <div class="row" id="recs"></div>
+
+        <h3>Аспекты</h3>
+        <div id="asp"></div>
+        <div class="row"><input id="newAsp" placeholder="Свой аспект, например «Саундтрек»" style="max-width:320px"><button id="addAsp">Добавить аспект</button></div>
+
+        <div class="pc">
+          <div><h3>Плюсы</h3><div id="pros"></div><button id="addPro" class="plus">+ Добавить плюс</button></div>
+          <div><h3>Минусы</h3><div id="cons"></div><button id="addCon" class="minus">− Добавить минус</button></div>
+        </div>
+
+        <div class="row" style="margin-top:36px"><button id="del" style="color:var(--minus)">Удалить обзор</button></div>
+      </section>
+    </article>
+  </div>
+</main>
+
+<div id="bubble">
+  <button data-c="bold"><b>B</b></button><button data-c="italic"><i>I</i></button><button data-c="underline"><u>U</u></button><button data-c="strike"><s>S</s></button><button data-c="code">{ }</button>
+  <button data-c="link">Ссылка</button><button data-c="game">Игра</button><button data-c="spoiler">Спойлер</button>
+</div>
+<div id="modal"><div id="box"></div></div>
+<div id="toast"></div>
+<input type="file" id="file" accept="image/*" multiple hidden>
+
+<script src="app.js"></script>
+</body>
+</html>

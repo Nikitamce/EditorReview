@@ -1,0 +1,330 @@
+:root{color-scheme:dark;--bg:#0c1218;--surface:#121c25;--surface-2:#17232e;--surface-3:#1c2b37;--border:#263746;--border-soft:#202f3b;--text:#e8eef3;--muted:#91a3b2;--subtle:#647888;--accent:#66c0f4;--accent-2:#3b9bd4;--green:#7fca9a;--orange:#e4ad64;--shadow:0 18px 50px #0005;--radius:14px}
+*{box-sizing:border-box}html{min-width:320px;background:var(--bg)}body{margin:0;background:radial-gradient(ellipse at 18% -12%,#1b3444 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;line-height:1.5}.app-shell{min-height:100vh}.topbar{height:68px;border-bottom:1px solid #263744;background:#0b1219eF;display:flex;align-items:center;justify-content:space-between;padding:0 max(28px,calc((100vw - 1480px)/2));position:sticky;top:0;z-index:5;backdrop-filter:blur(16px)}.brand{display:flex;align-items:center;gap:12px;color:#eaf1f6;text-decoration:none;letter-spacing:.12em;font-size:12px;font-weight:600}.brand b{color:var(--accent);font-weight:800}.brand-mark{width:30px;height:30px;border:1px solid #5a9cc3;border-radius:9px;display:grid;place-items:center;background:linear-gradient(145deg,#1f465f,#102331);transform:rotate(-5deg)}.brand-mark span{width:13px;height:13px;border:3px solid #9bd9fc;border-right-color:transparent;border-radius:50%;transform:rotate(-35deg)}.topbar-right{display:flex;align-items:center;gap:18px}.local-pill{display:flex;align-items:center;gap:8px;color:#8ea5b5;font-size:11px}.local-pill i,.live-indicator i,.render-status i{width:7px;height:7px;border-radius:50%;background:#6bc58e;box-shadow:0 0 0 4px #6bc58e20}.icon-button{height:34px;width:34px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:#9eb2c0;display:grid;place-items:center;cursor:pointer}.icon-button svg{width:17px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round}.main-content{max-width:1480px;margin:0 auto;padding:38px 28px 22px}.intro-row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:26px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:.19em;color:#7f9bad;margin-bottom:10px}.eyebrow span{color:var(--accent);padding:0 5px}.intro-row h1{margin:0;font-size:clamp(26px,3vw,36px);line-height:1.15;letter-spacing:-.045em;font-weight:800}.intro-row h1 span{color:var(--accent)}.subtitle{margin:10px 0 0;color:var(--muted);font-size:13px}.intro-actions{display:flex;gap:9px;flex-shrink:0}.button{height:38px;border:1px solid transparent;border-radius:8px;padding:0 14px;font:600 12px Inter,sans-serif;cursor:pointer;transition:.18s ease;display:inline-flex;align-items:center;justify-content:center;gap:8px}.button:hover{transform:translateY(-1px);filter:brightness(1.08)}.button-primary{background:linear-gradient(180deg,#6bbcea,#398fc5);color:#092031;box-shadow:0 5px 18px #328fc52b}.button-quiet{background:#192630;border-color:#304351;color:#bfccd5}.button-small{height:32px;padding:0 11px;font-size:11px}.button-icon{font-size:17px;line-height:0}.panel{background:linear-gradient(180deg,#14202a,#111b24);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 10px 30px #0002}.meta-panel{padding:17px 19px 19px;margin-bottom:26px}.panel-heading,.reference-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}.panel-heading>div,.reference-head>div{display:flex;align-items:center;gap:10px}.step-index{font:600 10px "JetBrains Mono",monospace;color:var(--accent);border:1px solid #34556a;background:#173044;border-radius:5px;padding:3px 6px}.panel-heading h2,.reference-head h2,.section-title h2{font-size:14px;margin:0;font-weight:700;letter-spacing:-.01em}.autosave{color:#8297a6;font-size:10px;display:flex;align-items:center;gap:7px}.save-dot{height:6px;width:6px;border-radius:50%;background:#6bc58e}.meta-grid{display:grid;grid-template-columns:2fr 1.35fr .75fr 1.55fr;gap:13px}.field{min-width:0;display:flex;flex-direction:column;gap:6px}.field>span{font-size:10px;color:#8da1b0;font-weight:600;letter-spacing:.03em}.field input{height:37px;min-width:0;width:100%;border:1px solid #2b3e4d;border-radius:7px;background:#0e1821;color:#dbe5ec;font:500 12px Inter,sans-serif;padding:0 10px;outline:none;transition:.15s}.field input:focus{border-color:#579fc9;box-shadow:0 0 0 3px #58a9dc1b}.input-suffix{position:relative}.input-suffix input{padding-right:35px}.input-suffix>span{position:absolute;right:11px;top:9px;color:#718898;font-size:11px}.verdict-switch{height:37px;display:flex;background:#0e1821;border:1px solid #2b3e4d;border-radius:7px;padding:3px;gap:3px}.verdict-option{flex:1;border:0;border-radius:5px;background:transparent;color:#8296a5;font:600 10px Inter,sans-serif;cursor:pointer;white-space:nowrap}.verdict-option span{margin-right:4px}.verdict-option.active[data-verdict=positive]{background:#254736;color:#a6e5b8}.verdict-option.active[data-verdict=negative]{background:#4a3030;color:#f0aaa5}.workspace-heading{display:flex;align-items:center;justify-content:space-between;margin:0 1px 13px}.section-title{display:flex;align-items:center;gap:10px}.section-title>div{display:flex;flex-direction:column;gap:1px}.section-title p{margin:0;color:#8194a3;font-size:10px}.workspace-tools{display:flex;align-items:center;gap:8px}.live-indicator{display:flex;align-items:center;gap:7px;color:#85a4b5;font:600 9px "JetBrains Mono",monospace;letter-spacing:.08em;margin-right:8px}.live-indicator i{height:6px;width:6px}.workbench{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:stretch}.editor-column,.preview-column{min-width:0;overflow:hidden;display:flex;flex-direction:column}.column-topline{height:66px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border-soft)}.column-title{display:flex;align-items:center;gap:10px}.column-title h3{font-size:12px;margin:0;font-weight:700}.column-title small{font-size:10px;color:#8295a4}.column-icon{height:31px;width:31px;border-radius:8px;display:grid;place-items:center;font:600 11px "JetBrains Mono",monospace}.code-icon{color:#7fcdf3;background:#1d3a4d}.eye-icon{color:#9fd4af;background:#254034;font-size:17px}.editor-stats{color:#718796;font:10px "JetBrains Mono",monospace}.stat-separator{padding:0 5px;color:#405463}.toolbar{padding:10px 13px 9px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;border-bottom:1px solid var(--border-soft);background:#111b24}.tool-group{display:flex;gap:4px}.tool-divider{height:21px;width:1px;background:#30404d}.tool-button{height:29px;min-width:29px;padding:0 8px;border:1px solid transparent;border-radius:5px;background:transparent;color:#a5b7c4;cursor:pointer;font:600 11px Inter,sans-serif}.tool-button:hover{background:#233441;border-color:#345164;color:#e1f2fc}.tool-button.strong{font-weight:800}.tool-button.italic{font-style:italic}.tool-button.under{text-decoration:underline}.tool-button.strike{text-decoration:line-through}.tool-heading{font:700 10px "JetBrains Mono",monospace;color:#7dbce0}.quick-inserts{min-height:38px;display:flex;align-items:center;gap:7px;padding:5px 14px;border-bottom:1px solid var(--border-soft);background:#101922}.quick-inserts>span{font-size:10px;color:#778d9c;margin-right:2px}.chip-button{height:24px;padding:0 8px;border:1px solid #2f495a;border-radius:5px;background:#172a37;color:#9dc9e2;font:600 9px Inter,sans-serif;cursor:pointer}.chip-button:hover{background:#203e50;color:#d5efff}.textarea-wrap{display:flex;position:relative;min-height:550px;flex:1;background:#0d161e;overflow:hidden}.line-gutter{width:39px;flex-shrink:0;padding:15px 9px 15px 0;text-align:right;white-space:pre;font:11px/1.72 "JetBrains Mono",monospace;color:#405462;background:#0c151d;border-right:1px solid #1c2a35;user-select:none;overflow:hidden}#sourceEditor{display:block;width:100%;height:550px;min-height:550px;resize:vertical;border:0;outline:0;padding:14px 15px;background:transparent;color:#c8d7e2;font:11.5px/1.72 "JetBrains Mono",Consolas,monospace;tab-size:2;white-space:pre;overflow:auto;caret-color:#7bc7f2}#sourceEditor::selection{background:#35627e;color:#fff}.editor-footer{height:39px;border-top:1px solid var(--border-soft);display:flex;justify-content:space-between;align-items:center;padding:0 13px;color:#718594;font-size:9px}.editor-footer kbd{font:9px "JetBrains Mono",monospace;border:1px solid #3a4b58;border-radius:3px;padding:2px 4px;color:#a9bac6;background:#192630}.text-button{border:0;background:none;color:#7eabc7;font:600 10px Inter,sans-serif;cursor:pointer}.text-button:hover{color:#b9e2fa}.preview-topline{background:#141f29}.preview-switch{display:flex;gap:3px;background:#0e1821;border:1px solid #2a3b48;border-radius:6px;padding:3px}.preview-theme{height:23px;width:27px;border:0;border-radius:4px;background:none;color:#8297a6;cursor:pointer}.preview-theme.active{background:#294456;color:#d3efff}.steam-preview-wrap{padding:13px;background:#101a23;flex:1;min-height:0;transition:background .2s}.steam-community-bar{height:32px;background:#1b3447;display:flex;align-items:center;gap:15px;padding:0 11px;color:#b7c9d5;font-size:8px;letter-spacing:.08em;font-weight:700}.steam-mini-logo{font-size:15px;color:#7cc5ee}.community-spacer{flex:1}.steam-review-card{margin-top:12px;background:#1c2b39;border:1px solid #2c4353;padding:17px 17px 0;box-shadow:0 7px 19px #0002;color:#c7d5e0}.review-top{display:flex;align-items:flex-start;gap:12px}.recommend-icon{width:43px;height:43px;flex-shrink:0;display:grid;place-items:center;background:linear-gradient(145deg,#2b5c7a,#21425a);border:1px solid #477593;border-radius:4px;font-size:21px}.review-heading{flex:1;min-width:0}.recommend-label{font-size:9px;color:#8fc8e8;text-transform:uppercase;letter-spacing:.1em;font-weight:700}.review-game{font-size:15px;font-weight:700;color:#e8f0f5;line-height:1.3;overflow-wrap:anywhere}.review-author{display:flex;align-items:center;gap:6px;margin-top:5px;font-size:9px;color:#8ea6b6}.avatar{height:17px;width:17px;border-radius:3px;display:grid;place-items:center;background:#44657a;color:#e6f3fa;font-size:9px;font-weight:700}.review-date{color:#708898}.hours-badge{display:flex;flex-direction:column;align-items:flex-end;padding-top:4px;flex-shrink:0}.hours-badge strong{font:600 14px "JetBrains Mono",monospace;color:#b8cad5}.hours-badge span{font-size:7px;letter-spacing:.09em;color:#718b9c}.review-divider{height:1px;background:#304553;margin:15px 0}.rendered-review{font-size:12px;line-height:1.65;color:#c9d5df;overflow-wrap:anywhere;min-height:120px}.rendered-review h1{font-size:22px;line-height:1.2;color:#f0f5f8;margin:19px 0 12px;font-weight:800}.rendered-review h2{font-size:18px;line-height:1.3;color:#e5edf3;margin:18px 0 10px;font-weight:700}.rendered-review h3{font-size:15px;color:#dce7ee;margin:16px 0 8px;font-weight:700}.rendered-review p{margin:0 0 11px}.rendered-review strong{color:#e7f0f5}.rendered-review u{text-decoration-color:#84c9ed;text-underline-offset:3px}.rendered-review a{color:#8bcaf0;text-decoration:none}.rendered-review a:hover{text-decoration:underline;color:#c0e6ff}.rendered-review hr{border:0;border-top:1px solid #3a5262;margin:19px 0}.rendered-review blockquote{margin:12px 0;padding:10px 13px;border-left:3px solid #67a9d1;background:#172c3a;color:#b7c9d5}.quote-author{font-size:9px;color:#7fabc7;font-weight:700;margin-bottom:5px}.rendered-review ul,.rendered-review ol{padding-left:22px;margin:5px 0 13px}.rendered-review li{padding-left:2px;margin:3px 0}.rendered-review li::marker{color:#7db9dc}.rendered-review details{margin:10px 0;background:#172b38;border:1px solid #2c4657;border-radius:4px;padding:7px 10px}.rendered-review summary{color:#8ac8ed;cursor:pointer;font-weight:600}.rendered-review details[open] summary{margin-bottom:7px}.rendered-review .noparse-output{white-space:pre-wrap}.rendered-review pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:11px 13px;background:#0e1720;border:1px solid #2a3c49;border-radius:4px;color:#a9c4d6;font:10px/1.6 "JetBrains Mono",monospace;margin:10px 0}.rendered-review table{width:100%;border-collapse:collapse;margin:12px 0;font-size:10px}.rendered-review th,.rendered-review td{border:1px solid #405767;padding:6px 8px;text-align:left;vertical-align:top}.rendered-review th{background:#263c4b;color:#e2edf4;font-weight:700}.rendered-review table.no-border th,.rendered-review table.no-border td{border:0}.rendered-review table.equal-cells{table-layout:fixed}.rendered-review table.equal-cells th,.rendered-review table.equal-cells td{text-align:center}.preview-card{display:flex;gap:11px;align-items:center;padding:9px;background:#132633;border:1px solid #36566c;border-radius:4px;margin:11px 0;color:#c5d8e4;text-decoration:none;max-width:100%;transition:.15s}.preview-card:hover{background:#1a3547;border-color:#5792b8;text-decoration:none}.preview-card-art{width:92px;min-width:92px;height:52px;border-radius:3px;display:grid;place-items:center;background:linear-gradient(135deg,#1f536f,#142d3d);color:#a9dbf7;font-size:23px;overflow:hidden}.preview-card-art.youtube{background:linear-gradient(135deg,#602b2c,#261d25)}.preview-card-art.workshop{background:linear-gradient(135deg,#416048,#213b3d)}.preview-card-art img{width:100%;height:100%;object-fit:cover}.preview-card-copy{min-width:0;display:flex;flex-direction:column;gap:2px}.preview-card-kicker{font-size:7px;letter-spacing:.13em;color:#83b9d6;font-weight:700;text-transform:uppercase}.preview-card-title{font-size:10px;font-weight:700;color:#e4eef4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.preview-card-subtitle{font-size:8px;color:#8ba4b4}.preview-bottom-spacer{height:1px}.review-bottom{display:flex;justify-content:space-between;align-items:center;margin:14px -17px 0;padding:10px 17px;background:#172531;border-top:1px solid #2d4251;color:#7f98a8;font-size:9px}.review-bottom b{color:#a9cfe5;font-weight:600;margin:0 3px}.award-placeholder{color:#71899a}.preview-footnote{margin:10px 2px 0;color:#718898;font-size:9px;line-height:1.45}.preview-footer{height:37px;padding:0 15px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-soft);color:#718796;font-size:9px}.render-status{display:flex;align-items:center;gap:7px;color:#8eb29d}.render-status i{width:6px;height:6px}.reference-panel{margin-top:22px;padding:17px 19px 16px}.reference-head{margin-bottom:15px}.reference-hint{color:#718795;font-size:9px}.reference-grid{display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:19px}.reference-group h3{font-size:10px;color:#87a2b4;margin:0 0 9px;font-weight:700;text-transform:uppercase;letter-spacing:.09em}.reference-tags{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.reference-tags button{display:flex;align-items:center;gap:9px;min-width:0;height:31px;padding:0 8px;background:#111d26;border:1px solid #293c4a;border-radius:5px;color:#91a6b5;text-align:left;cursor:pointer}.reference-tags button:hover{border-color:#4b7893;background:#1a2c39;color:#d9ebf5}.reference-tags button b{min-width:22px;color:#8fc8e9;text-align:center;font:700 10px "JetBrains Mono",monospace}.reference-tags button span{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.reference-note{display:flex;align-items:center;gap:10px;margin-top:15px;padding:10px 12px;background:#172b36;border:1px solid #294656;border-radius:7px;color:#9cb2c0}.note-icon{height:18px;width:18px;flex-shrink:0;border-radius:50%;display:grid;place-items:center;background:#31546a;color:#b6e1fa;font:700 11px Georgia}.reference-note p{margin:0;font-size:10px;line-height:1.5}.reference-note b{color:#c5e4f5}.app-footer{display:flex;justify-content:space-between;align-items:center;padding:19px 2px;color:#5d7281;font:9px "JetBrains Mono",monospace;letter-spacing:.03em}.app-footer b{color:#7891a1;font-weight:500}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,18px);background:#e5f4fc;color:#102b3c;padding:10px 16px;border-radius:8px;box-shadow:var(--shadow);font-size:11px;font-weight:700;opacity:0;pointer-events:none;transition:.2s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}
+/* Preview light theme */
+#previewTheme.light{background:#dce4e9}.light .steam-community-bar{background:#254e68;color:#e1edf4}.light .steam-review-card{background:#f2f5f7;border-color:#c4d0d8;color:#344b5b}.light .recommend-icon{background:#d5eaf5;border-color:#b6d5e5}.light .recommend-label{color:#327ba5}.light .review-game{color:#1b3445}.light .review-author{color:#607989}.light .avatar{background:#9bb6c6;color:#173246}.light .hours-badge strong{color:#365466}.light .hours-badge span{color:#748c9b}.light .review-divider{background:#cbd8df}.light .rendered-review{color:#344d5c}.light .rendered-review h1,.light .rendered-review h2,.light .rendered-review h3{color:#18394d}.light .rendered-review blockquote{background:#e3edf2;color:#3e5969}.light .rendered-review pre{background:#e5edf1;border-color:#cad7df;color:#334e60}.light .rendered-review th{background:#d6e4eb;color:#213e50}.light .rendered-review th,.light .rendered-review td{border-color:#b5c8d3}.light .rendered-review table.no-border th,.light .rendered-review table.no-border td{border:0}.light .rendered-review details{background:#e5eef2;border-color:#c6d7e0}.light .rendered-review summary{color:#276f9a}.light .rendered-review a{color:#2678a8}.light .review-bottom{background:#e7edf1;border-color:#cbd8df;color:#627d8d}.light .review-bottom b{color:#2e6e91}.light .preview-card{background:#e4edf2;border-color:#bdd0dc}.light .preview-card-title{color:#214257}.light .preview-card-subtitle{color:#607c8d}.light .preview-card-kicker{color:#477e9e}.light .preview-card-art{color:#e2f5ff}
+body.light-ui{--bg:#e9eff3;--surface:#fff;--surface-2:#f4f7f9;--surface-3:#edf3f6;--border:#cbd7df;--border-soft:#dce5ea;--text:#193246;--muted:#5f7687;--subtle:#8499a7}body.light-ui{background:radial-gradient(ellipse at 18% -12%,#d4e8f2 0,transparent 35%),var(--bg);color:var(--text)}body.light-ui .topbar{background:#f6fafbea;border-color:#cfdae1}body.light-ui .brand{color:#203a4c}body.light-ui .panel{background:linear-gradient(180deg,#fff,#f6f9fb)}body.light-ui .field input,body.light-ui .verdict-switch{background:#f6f9fb;color:#284558;border-color:#cbd8df}body.light-ui .toolbar,body.light-ui .quick-inserts{background:#f1f6f8;border-color:#dce5ea}body.light-ui .tool-button{color:#526f82}body.light-ui .tool-button:hover{background:#dfedf4;color:#244b63}body.light-ui .textarea-wrap{background:#f8fbfc}body.light-ui .line-gutter{background:#f1f6f8;color:#99aab5;border-color:#dce5ea}body.light-ui #sourceEditor{color:#29495d}body.light-ui .column-topline,body.light-ui .editor-footer,body.light-ui .preview-footer{border-color:#dce5ea}body.light-ui .button-quiet{background:#edf3f6;border-color:#cad8e0;color:#35566a}body.light-ui .reference-tags button{background:#f4f8fa;border-color:#d3dfe6;color:#547083}body.light-ui .reference-note{background:#e8f2f7;border-color:#c8dce7;color:#4b6d82}body.light-ui .steam-preview-wrap{background:#dce4e9}body.light-ui .steam-review-card{background:#f2f5f7}body.light-ui .preview-footnote{color:#5b7484}
+@media(max-width:1100px){.meta-grid{grid-template-columns:1.5fr 1.2fr .7fr}.field-verdict{grid-column:1/-1}.workbench{grid-template-columns:1fr}.textarea-wrap,#sourceEditor{min-height:390px;height:390px}.preview-column{min-height:640px}.reference-grid{grid-template-columns:1fr 1fr}.reference-group:last-child{grid-column:1/-1}}
+@media(max-width:700px){.topbar{padding:0 16px;height:58px}.local-pill{display:none}.main-content{padding:25px 13px 15px}.intro-row{display:block}.intro-actions{margin-top:17px}.meta-grid{grid-template-columns:1fr 1fr}.field-game,.field-verdict{grid-column:1/-1}.workspace-heading{align-items:flex-start;gap:12px;flex-direction:column}.workspace-tools{width:100%;justify-content:flex-end}.live-indicator{margin-right:auto}.column-topline{padding:0 11px}.toolbar{gap:6px;padding:8px}.tool-divider{display:none}.quick-inserts{flex-wrap:wrap;padding:8px}.quick-inserts>span{width:100%}.editor-stats{font-size:8px}.textarea-wrap,#sourceEditor{min-height:360px;height:360px}.reference-grid{grid-template-columns:1fr}.reference-group:last-child{grid-column:auto}.reference-hint{display:none}.app-footer{gap:10px;align-items:flex-start;flex-direction:column}.steam-community-bar{gap:8px;font-size:7px}.community-spacer{display:none}.review-top{gap:8px}.hours-badge span{font-size:6px}.steam-review-card{padding:12px 11px 0}.review-bottom{margin:14px -11px 0;padding:9px 11px}.rendered-review h1{font-size:19px}.preview-card-art{width:70px;min-width:70px;height:45px}}
+
+  
+/* === Steam Community reference layout === */
+.workbench{grid-template-columns:minmax(360px,.78fr) minmax(0,1.22fr);align-items:start}
+.editor-column{position:sticky;top:82px;max-height:calc(100vh - 102px)}
+.editor-column .textarea-wrap{min-height:0;flex:1}
+.editor-column #sourceEditor{height:100%;min-height:480px;resize:vertical}
+.preview-column{min-height:720px}
+.preview-column.is-expanded{position:fixed;inset:12px;z-index:1000;max-height:none;min-height:0;border-radius:10px;box-shadow:0 0 0 100vmax #000b,0 25px 90px #000b}
+.preview-column.is-expanded .steam-preview-wrap{overflow:auto;max-height:calc(100vh - 108px)}
+.preview-column.is-expanded .preview-footer{display:none}
+.preview-expand{font-size:16px;width:30px;height:27px}
+.preview-topline{gap:8px}
+.preview-switch{margin-left:auto}
+.steam-preview-wrap{padding:0;background:#1b2838;overflow:auto;max-height:calc(100vh - 190px);min-height:760px;border:0}
+.steam-page-frame{width:100%;min-width:0;margin:0 auto;background:#1b2838;color:#c6d4df;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.45;box-shadow:0 8px 28px #0004}
+.steam-global-nav{height:64px;background:#171a21;display:flex;align-items:center;justify-content:space-between;padding:0 16px 0 20px;gap:10px;color:#d6d7d8}
+.steam-nav-left{display:flex;align-items:center;min-width:0;gap:8px}
+.steam-brand-mark{width:32px;height:32px;border:4px solid #c6d4df;border-radius:50%;position:relative;flex:0 0 auto;opacity:.92}
+.steam-brand-mark:before{content:"";position:absolute;width:11px;height:11px;border:3px solid #c6d4df;border-radius:50%;right:-3px;top:0;background:#171a21}
+.steam-brand-mark:after{content:"";position:absolute;width:15px;height:5px;background:#c6d4df;transform:rotate(28deg);left:-9px;bottom:4px;border-radius:6px}
+.steam-brand-mark span{position:absolute;width:6px;height:6px;background:#171a21;border:2px solid #c6d4df;border-radius:50%;left:4px;bottom:2px;z-index:2}
+.steam-brand-word{font-size:21px;font-weight:800;letter-spacing:1px;margin-right:26px;color:#d6d7d8}
+.steam-nav-links{display:flex;align-items:center;gap:15px;min-width:0;white-space:nowrap;font-size:11px;font-weight:700;color:#c6d4df}
+.steam-nav-links span{display:block}
+.steam-nav-links .active,.steam-nav-links .profile-nav-name{color:#1a9fff}
+.steam-nav-links .profile-nav-name{border-bottom:2px solid #1a9fff;padding:22px 0 19px}
+.steam-nav-right{display:flex;align-items:center;gap:8px;white-space:nowrap;font-size:9px;color:#c6d4df}
+.steam-install{background:#384451;padding:5px 8px;border-radius:2px}
+.steam-bell{padding:5px 8px;background:#2b3038}
+.steam-account{text-align:right;line-height:1.3}
+.steam-account small{color:#9ba8b4}
+.steam-nav-avatar{width:31px;height:31px;object-fit:cover;border:1px solid #1a9fff;padding:2px}
+.steam-profile-strip{height:94px;margin:0 14px;background:#2a3441;display:flex;align-items:center;gap:16px;padding:11px 24px;box-shadow:0 6px 12px #0005;position:relative;z-index:1}
+.steam-profile-avatar{width:76px;height:76px;object-fit:cover;border:1px solid #607b8d;padding:3px;background:#111820}
+.steam-profile-crumbs{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;color:#c6d4df;font-size:12px;min-width:0}
+.steam-profile-name{font-size:24px;color:#f1f5f9;font-weight:400}
+.crumb-sep{color:#73818d}
+#previewGame{overflow-wrap:anywhere}
+.steam-review-layout{display:grid;grid-template-columns:minmax(0,2.05fr) minmax(190px,.96fr);gap:16px;margin:0 28px 0 28px;padding:14px 0 28px;align-items:start}
+.steam-review-main{min-width:0;background:#101820;padding:0 0 22px;color:#c6d4df}
+.steam-moderation-notice{margin:0 0 9px;padding:12px 15px;background:#c9a46d;border:1px solid #e2c08a;color:#fff9ed;display:flex;align-items:center;gap:10px;font-size:11px;line-height:1.5}
+.steam-moderation-notice button{margin-left:auto;flex:0 0 auto;border:0;background:transparent;color:#fff;font-size:18px;cursor:pointer;opacity:.8}
+.steam-moderation-notice.hidden{display:none}
+.steam-helpful-line{height:30px;background:#0d151e;border:1px solid #182b3a;color:#8796a2;padding:6px 9px;font-size:10px;margin-bottom:8px}
+.steam-recommend-row{height:50px;display:flex;align-items:center;background:linear-gradient(90deg,#1c2d3c,#111d29);gap:11px;padding:5px 8px;margin-bottom:14px}
+.steam-thumb-icon{width:45px;height:42px;display:grid;place-items:center;background:#14506e;color:#4db9e8;font-size:28px;line-height:1;flex:0 0 auto}
+.steam-recommend-copy{min-width:0;display:flex;flex-direction:column;gap:2px}
+.steam-recommend-label{font-size:15px;color:#d6d7d8}
+.steam-playtime{font-size:10px;color:#aeb9c3}
+.steam-playtime b{font-weight:400;color:#d6d7d8}
+.steam-award-star{margin-left:auto;color:#576d7d;font-size:22px;padding-right:4px}
+.steam-published{display:flex;flex-direction:column;gap:2px;color:#83909b;font-size:10px;margin:0 0 16px}
+.steam-published b{font-weight:400;color:#aeb9c3}
+.rendered-review{font-size:12px;line-height:1.48;color:#b8bcbf;overflow-wrap:anywhere;min-height:160px}
+.rendered-review h1{font-size:21px;line-height:1.22;color:#66c0f4;margin:18px 0 17px;font-weight:400;letter-spacing:0;text-transform:none}
+.rendered-review h2{font-size:16px;line-height:1.3;color:#66c0f4;margin:28px 0 18px;font-weight:400}
+.rendered-review h3{font-size:13px;color:#66c0f4;margin:22px 0 12px;font-weight:400}
+.rendered-review p{margin:0 0 13px}
+.rendered-review strong{color:#c6d4df}
+.rendered-review u{text-decoration-color:#a5b5c2;text-underline-offset:2px}
+.rendered-review a{color:#c6d4df;text-decoration:underline;text-decoration-color:#667c8b}
+.rendered-review a:hover{color:#66c0f4}
+.rendered-review hr{border:0;border-top:1px solid #6b747b;margin:24px 0 28px}
+.rendered-review blockquote{margin:16px 0 20px;padding:11px 13px;border:1px solid #3b4d5a;background:#121e28;color:#b8c6d1;border-radius:2px;font-size:11px}
+.rendered-review .quote-author{font-size:10px;color:#a7b9c7;font-style:italic;margin-bottom:6px}
+.rendered-review ul,.rendered-review ol{padding-left:31px;margin:8px 0 20px}
+.rendered-review li{padding-left:1px;margin:1px 0}
+.rendered-review li::marker{color:#c6d4df}
+.rendered-review details{margin:12px 0;background:#121d27;border:1px solid #344653;padding:8px 10px;border-radius:2px}
+.rendered-review summary{color:#66c0f4;cursor:pointer;font-weight:600}
+.rendered-review details[open] summary{margin-bottom:8px}
+.rendered-review .noparse-output{white-space:pre-wrap;color:#b8bcbf}
+.rendered-review pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:11px 13px;background:#030609;border:0;border-radius:0;color:#9ca7b0;font:10px/1.55 Consolas,monospace;margin:12px 0 20px}
+.rendered-review table{width:auto;max-width:100%;border-collapse:collapse;margin:15px 0 22px;font-size:10px;color:#b8c1c9;table-layout:auto}
+.rendered-review th,.rendered-review td{border:1px solid #4b5963;padding:4px 6px;text-align:left;vertical-align:top}
+.rendered-review th{background:#192630;color:#c6d4df;font-weight:600}
+.rendered-review table.no-border th,.rendered-review table.no-border td{border:0}
+.rendered-review table.equal-cells{width:100%;table-layout:fixed}
+.rendered-review table.equal-cells th,.rendered-review table.equal-cells td{text-align:center}
+.rendered-review .steam-youtube-widget,.rendered-review .steam-workshop-widget,.rendered-review .steam-store-widget{display:flex;text-decoration:none;margin:12px 0 28px;color:#c6d4df;max-width:100%;overflow:hidden}
+.steam-youtube-widget{background:#1d2936;border-radius:4px;padding:8px;gap:12px;min-height:128px}
+.steam-youtube-thumb{width:126px;min-width:126px;height:94px;object-fit:cover;background:#070b10;border:1px solid #334453}
+.steam-youtube-copy{min-width:0;display:flex;flex-direction:column;gap:5px;font-size:10px;line-height:1.4}
+.steam-youtube-title{font-size:12px;color:#c7d9e4;text-decoration:underline;text-decoration-color:#627788}
+.steam-youtube-views{color:#a3aeb8}
+.steam-youtube-description{color:#aeb9c2;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.steam-workshop-widget{align-items:center;gap:12px;background:linear-gradient(110deg,#1f2b38,#18222d);border-radius:4px;padding:8px;min-height:90px;max-width:620px}
+.steam-workshop-thumb{width:94px;height:94px;object-fit:cover;flex:0 0 auto}
+.steam-widget-copy{min-width:0;display:flex;flex-direction:column;gap:4px}
+.steam-widget-title{font-size:13px;color:#c6d4df;text-decoration:underline;text-underline-offset:2px}
+.steam-widget-meta{font-size:10px;color:#aebac4}
+.steam-widget-meta em{font-style:normal;color:#7e9cb1}
+.steam-store-widget{display:block;max-width:620px;background:#323e4e;border:1px solid #45566a;padding:10px 12px 12px;position:relative;box-shadow:0 4px 8px #0005}
+.steam-store-title{font-size:17px;color:#fff;margin-bottom:10px;padding-right:34px}
+.steam-store-brand{position:absolute;right:10px;top:8px;color:#aeb7c2;font-size:21px}
+.steam-store-content{display:grid;grid-template-columns:42% 1fr;gap:11px;align-items:start}
+.steam-store-capsule{width:100%;height:76px;object-fit:cover}
+.steam-store-description{font-size:10px;line-height:1.3;color:#d1d7dd}
+.steam-store-footer{height:29px;display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:-2px}
+.steam-platform-mark{margin-right:auto;color:#e5ebef;font-size:14px}
+.steam-store-price{background:#0b1016;color:#d7e1e9;padding:5px 9px;font-size:11px}
+.steam-buy-button{background:#75a83b;color:#eaffce;padding:5px 11px;font-size:11px;border-radius:2px}
+.steam-pc-specs{display:flex;flex-direction:column;gap:2px;background:#466887;color:#d0e3f0;padding:7px 9px;margin:28px 0 40px;max-width:620px;font-size:11px;line-height:1.35}
+.steam-pc-specs b{font-size:12px}
+.steam-comments-bar{height:28px;background:#21364d;color:#aebdca;display:flex;align-items:center;gap:15px;padding:0 8px;font-size:10px;margin-top:20px}
+.steam-comments-bar label{display:flex;align-items:center;gap:4px}
+.steam-comments-bar input{width:11px;height:11px;margin:0}
+.steam-comment-input{height:53px;background:#0a1118;display:flex;align-items:center;gap:10px;padding:7px;border:1px solid #253744;color:#788d9d;font-size:10px}
+.steam-comment-input img{width:36px;height:36px;object-fit:cover}
+.steam-review-sidebar{min-width:0;display:flex;flex-direction:column;gap:12px}
+.steam-game-widget{background:#0d151d;padding:0 0 10px;display:flex;flex-direction:column;gap:0}
+.steam-game-cover{width:100%;height:auto;aspect-ratio:2.6/1;object-fit:cover;display:block;margin-bottom:5px}
+.steam-game-widget a{color:#d6d7d8;text-decoration:none;font-size:11px;padding:6px 9px;display:block}
+.steam-game-widget a:hover{color:#66c0f4}
+.steam-management{border:1px solid #6a8b22;background:#111820;color:#aab5bf;padding:9px 0 8px}
+.steam-management-title{font-size:9px;color:#8dbb25;padding:0 10px 7px}
+.steam-manage-row{min-height:36px;border-top:1px solid #26313a;padding:8px 10px;display:flex;align-items:center;gap:8px;font-size:11px;color:#aab5bf}
+.steam-manage-row:first-of-type{border-top:0}
+.steam-manage-row input{width:13px;height:13px;margin:0;accent-color:#1a9fff;flex:0 0 auto}
+.steam-select-label{padding:9px 11px 0;display:flex;flex-direction:column;gap:5px;font-size:11px;color:#9daab5}
+.steam-select-label select{height:26px;border:1px solid #89939d;border-radius:2px;background:#9ba5ad;color:#24313a;padding:0 7px;font:11px Arial,sans-serif}
+.steam-friends-block{display:flex;flex-direction:column;gap:3px}
+.steam-friends-title{font-size:9px;color:#d2d8de;padding:0 0 3px}
+.steam-friend{height:48px;background:#22374d;display:flex;align-items:center;gap:8px;padding:4px 7px;min-width:0}
+.friend-avatar{width:34px;height:34px;display:grid;place-items:center;border:1px solid #415b70;background:#293d51;color:#d6e9f5;font-size:17px;flex:0 0 auto}
+.friend-avatar.purple{background:linear-gradient(135deg,#533c9c,#263963)}.friend-avatar.blue{background:linear-gradient(135deg,#365caa,#23344d)}.friend-avatar.pink{background:linear-gradient(135deg,#a75c8e,#3d385f)}.friend-avatar.red{background:linear-gradient(135deg,#a24b46,#3e343c)}.friend-avatar.green{background:linear-gradient(135deg,#477d65,#293c3d)}
+.steam-friend span:last-child{display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.steam-friend b{font-size:9px;color:#a9c8dc;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:400}
+.steam-friend small{font-size:9px;color:#849cad;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.preview-footnote{padding:8px 10px;color:#7b93a5;font-size:9px;background:#182433;line-height:1.4}
+#previewTheme.light .steam-page-frame{background:#dce4e9;color:#344b5b}
+#previewTheme.light .steam-review-main{background:#f3f5f7;color:#344b5b}
+#previewTheme.light .steam-profile-strip{background:#cbd7df}
+#previewTheme.light .steam-profile-name,#previewTheme.light .steam-profile-crumbs{color:#213d51}
+#previewTheme.light .steam-helpful-line{background:#e0e8ed;border-color:#c7d2da;color:#607989}
+#previewTheme.light .steam-recommend-row{background:#d5e4ed}
+#previewTheme.light .steam-recommend-label{color:#335a72}
+#previewTheme.light .steam-playtime,#previewTheme.light .steam-published{color:#5c7586}
+#previewTheme.light .steam-playtime b,#previewTheme.light .steam-published b{color:#34576e}
+#previewTheme.light .rendered-review{color:#344b5b}
+#previewTheme.light .rendered-review strong{color:#1d3e54}
+#previewTheme.light .rendered-review blockquote{background:#e5edf2;color:#3e5969;border-color:#c2d0d9}
+#previewTheme.light .rendered-review pre{background:#1c2329;color:#d0dce5}
+#previewTheme.light .rendered-review th,#previewTheme.light .rendered-review td{border-color:#b5c8d3}
+#previewTheme.light .rendered-review th{background:#d6e4eb;color:#213e50}
+#previewTheme.light .steam-youtube-widget,#previewTheme.light .steam-workshop-widget{background:#dce6ec}
+#previewTheme.light .steam-youtube-title,#previewTheme.light .steam-widget-title{color:#214257}
+#previewTheme.light .steam-youtube-description,#previewTheme.light .steam-widget-meta{color:#536e80}
+#previewTheme.light .steam-management{background:#f3f5f7}
+#previewTheme.light .steam-manage-row{color:#506879;border-color:#d1dce2}
+#previewTheme.light .steam-game-widget{background:#d5e0e7}
+#previewTheme.light .steam-game-widget a{color:#27485d}
+#previewTheme.light .steam-friend{background:#d1e0e9}
+#previewTheme.light .steam-friend b{color:#365f7d}
+#previewTheme.light .steam-pc-specs{color:#eff7fc}
+@media(max-width:1180px){.workbench{grid-template-columns:1fr}.editor-column{position:relative;top:auto;max-height:none}.editor-column .textarea-wrap{min-height:450px}.editor-column #sourceEditor{height:520px;min-height:520px}.steam-preview-wrap{max-height:none}.preview-column{min-height:780px}}
+@media(max-width:680px){.steam-global-nav{height:54px;padding:0 9px}.steam-brand-word{font-size:17px;margin-right:7px}.steam-nav-links{gap:8px;font-size:8px}.steam-nav-links span:nth-child(1),.steam-nav-links span:nth-child(4),.steam-nav-links span:nth-child(5),.steam-install,.steam-bell,.steam-account{display:none}.steam-profile-strip{margin:0 6px;height:auto;min-height:74px;padding:8px 10px;gap:10px}.steam-profile-avatar{width:54px;height:54px}.steam-profile-name{font-size:18px}.steam-profile-crumbs{font-size:10px;gap:5px}.steam-review-layout{grid-template-columns:1fr;margin:0 8px;padding-top:9px;gap:15px}.steam-review-sidebar{display:grid;grid-template-columns:1fr 1fr;align-items:start}.steam-game-widget{grid-column:1/-1}.steam-management{grid-column:1/-1}.steam-friends-block{min-width:0}.steam-moderation-notice{font-size:9px;padding:8px}.rendered-review h1{font-size:18px}.rendered-review h2{font-size:14px}.steam-youtube-thumb{width:95px;min-width:95px;height:70px}.steam-youtube-widget{min-height:90px}.steam-store-title{font-size:14px}.steam-store-content{grid-template-columns:38% 1fr}.steam-store-capsule{height:58px}.steam-review-sidebar{font-size:10px}}
+
+
+/* === Precision pass: compact Steam-like spacing and resilient link cards === */
+.rendered-review h1{font-size:18px;margin:14px 0 14px;line-height:1.23}
+.rendered-review h2{margin:19px 0 11px;line-height:1.28}
+.rendered-review h3{margin:16px 0 9px;line-height:1.3}
+.rendered-review p{margin:0 0 10px}
+.rendered-review hr{margin:17px 0 19px}
+.rendered-review ul,.rendered-review ol{margin:6px 0 16px;padding-left:24px}
+.rendered-review blockquote{margin:12px 0 16px;padding:9px 11px}
+.rendered-review pre{margin:9px 0 15px;padding:9px 11px}
+.rendered-review details{margin:9px 0 15px;padding:8px 10px}
+.rendered-review table{margin:10px 0 16px;font-size:11px;line-height:1.35}
+.rendered-review th,.rendered-review td{padding:5px 7px}
+.rendered-review table.equal-cells{width:100%;table-layout:fixed}
+.rendered-review table.equal-cells th,.rendered-review table.equal-cells td{width:auto;min-width:0;overflow-wrap:normal;word-break:normal}
+.rendered-review table.equal-cells h1,.rendered-review table.equal-cells h2,.rendered-review table.equal-cells h3{margin:0;line-height:1.2;overflow-wrap:normal;word-break:normal}
+.rendered-review .steam-youtube-widget,.rendered-review .steam-workshop-widget,.rendered-review .steam-store-widget{margin:8px 0 16px;width:100%;max-width:100%;}
+.rendered-review .steam-store-widget{display:block;box-sizing:border-box;}
+.steam-youtube-widget{min-height:0;align-items:center;gap:10px;padding:7px;border-radius:3px}
+.steam-youtube-thumb{width:112px;min-width:112px;height:84px}
+.steam-youtube-copy{gap:3px;font-size:10px;line-height:1.35}
+.steam-youtube-title{font-size:12px;line-height:1.3}
+.steam-youtube-description{-webkit-line-clamp:2}
+.steam-workshop-widget{min-height:0;gap:11px;padding:7px;max-width:100%;align-items:center}
+.steam-workshop-thumb{width:78px;height:78px}
+.steam-widget-copy{gap:3px}
+.steam-widget-title{font-size:13px;line-height:1.3}
+.steam-widget-meta{font-size:10px;line-height:1.3}
+.steam-store-widget{max-width:100%;padding:10px 11px 9px;overflow:hidden}
+.steam-store-title{display:block;width:100%;font-size:16px;line-height:1.25;margin:0 0 8px;padding:0 30px 0 0;overflow-wrap:break-word;word-break:normal;white-space:normal}
+.steam-store-content{display:grid;width:100%;grid-template-columns:minmax(120px,40%) minmax(0,1fr);gap:10px;align-items:start}
+.steam-store-capsule{display:block;width:100%;min-width:0;height:auto;aspect-ratio:460/215;object-fit:cover}
+.steam-store-description{min-width:0;font-size:10px;line-height:1.35;overflow-wrap:break-word;word-break:normal}
+.steam-store-footer{display:flex;width:100%;height:auto;min-height:27px;justify-content:flex-end;align-items:center;gap:5px;margin:8px 0 0}
+.steam-platform-mark{margin-right:auto;flex:0 0 auto}
+.steam-store-price,.steam-buy-button{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;white-space:nowrap;overflow-wrap:normal;word-break:normal;line-height:1.2}
+.steam-store-price{padding:5px 8px;font-size:11px}
+.steam-buy-button{padding:5px 9px;font-size:10px}
+.steam-recommend-label{font-size:17px;letter-spacing:0;text-transform:none;font-weight:400}
+.steam-playtime{font-size:11px}
+.steam-recommend-row{height:58px;gap:12px;padding:6px 9px;margin-bottom:12px}
+.steam-thumb-icon{width:48px;height:48px;font-size:24px}
+.steam-published{font-size:11px;margin-bottom:13px}
+.steam-published span{line-height:1.45}
+.rendered-review .noparse-output{white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:680px){
+  .steam-youtube-thumb{width:92px;min-width:92px;height:69px}
+  .steam-workshop-thumb{width:68px;height:68px}
+  .steam-store-content{grid-template-columns:minmax(105px,38%) minmax(0,1fr)}
+  .steam-store-title{font-size:14px}
+  .steam-store-buy-button{font-size:9px}
+}
+
+
+/* === Final fidelity pass: native Steam code / paragraph / verdict rhythm === */
+.rendered-review pre{
+  display:block;
+  width:100%;
+  max-width:100%;
+  margin:11px 0 17px;
+  padding:11px 13px;
+  border:1px solid #3b4d5a;
+  border-radius:3px;
+  background:#101820;
+  color:#aeb9c2;
+  font:10px/1.55 Consolas,"Courier New",monospace;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+  tab-size:4;
+}
+.rendered-review table{margin:11px 0 18px;}
+.rendered-review table h1,
+.rendered-review table h2,
+.rendered-review table h3{margin:0 0 3px;line-height:1.2;}
+.rendered-review table h2{font-size:16px;}
+.rendered-review table td strong,
+.rendered-review table th strong{font-size:10px;}
+.rendered-review p{margin:0 0 11px;}
+.rendered-review li{line-height:1.45;}
+.rendered-review blockquote{line-height:1.45;}
+#previewTheme.light .rendered-review pre{background:#e5edf1;border-color:#cad7df;color:#334e60;}
+
+/* === YouTube preview card: clean 16:9 thumbnail and Steam-like proportions === */
+.rendered-review .steam-youtube-widget{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  width:100%;
+  min-height:0;
+  padding:9px 10px;
+  margin:8px 0 16px;
+  background:#1b2838;
+  border:1px solid #26394b;
+  border-radius:2px;
+  color:#c6d4df;
+  text-decoration:none;
+  overflow:hidden;
+}
+.rendered-review .steam-youtube-thumb{
+  display:block;
+  flex:0 0 126px;
+  width:126px;
+  height:73px;
+  min-width:126px;
+  object-fit:cover;
+  object-position:center;
+  background:#0b1118;
+  border:1px solid #35485a;
+  border-radius:1px;
+}
+.rendered-review .steam-youtube-copy{
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
+  align-self:center;
+  min-width:0;
+  gap:3px;
+  font-size:11px;
+  line-height:1.35;
+  overflow:hidden;
+}
+.rendered-review .steam-youtube-title{
+  display:block;
+  min-width:0;
+  color:#c6d4df;
+  font-size:12px;
+  line-height:1.3;
+  font-weight:400;
+  overflow-wrap:anywhere;
+  text-decoration:underline;
+  text-decoration-color:#61788b;
+  text-underline-offset:2px;
+}
+.rendered-review .steam-youtube-views{
+  color:#9daebc;
+  font-size:10px;
+  line-height:1.3;
+}
+.rendered-review .steam-youtube-description{
+  display:-webkit-box;
+  min-width:0;
+  color:#afbdc9;
+  font-size:11px;
+  line-height:1.35;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+  overflow-wrap:anywhere;
+}
+#previewTheme.light .rendered-review .steam-youtube-widget{background:#dce6ec;border-color:#c4d1da;}
+#previewTheme.light .rendered-review .steam-youtube-title{color:#214257;}
+#previewTheme.light .rendered-review .steam-youtube-views,
+#previewTheme.light .rendered-review .steam-youtube-description{color:#536e80;}
+@media(max-width:680px){
+  .rendered-review .steam-youtube-widget{gap:9px;padding:7px;}
+  .rendered-review .steam-youtube-thumb{flex-basis:104px;width:104px;min-width:104px;height:60px;}
+  .rendered-review .steam-youtube-title{font-size:11px;}
+  .rendered-review .steam-youtube-description{font-size:10px;}
+}
+@media(max-width:420px){
+  .rendered-review .steam-youtube-thumb{flex-basis:88px;width:88px;min-width:88px;height:51px;}
+  .rendered-review .steam-youtube-copy{gap:2px;}
+}
+
